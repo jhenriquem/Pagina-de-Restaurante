@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+:root {
+  --background-color-transparent: #16161666;
+  --text-color: #ececec;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--text-color);
+  font-family: "Raleway", sans-serif;
+  background: url("imgs/background.jpg") 0 / 0 no-repeat fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+.links {
+  cursor: pointer;
+  margin: 0 1rem;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+
+.links:hover {
+  transform: translateY(-15%);
+  border-bottom: 1px solid var(--text-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: var(--background-color-transparent);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main {
+  margin: 1rem 0;
+  justify-content: center;
+  display: flex;
+}
+/*---------------------------------------------------------------------*/
+/*       Estilização da home page                                      */
+/*---------------------------------------------------------------------*/
+
+#title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.homepage {
+  padding: 1rem;
+  max-width: 43.3rem;
+}
+
+.homepage p {
+  color: #d3d3d3;
+}
+
+/*---------------------------------------------------------------------*/
+/*       Estilização da menu page                                      */
+/*---------------------------------------------------------------------*/
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-item {
+  background-color: var(--background-color-transparent);
+  width: 17rem;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.menu-item img {
+  width: 10rem;
+}
+/*---------------------------------------------------------------------*/
+/*       Estilização da contact page                                      */
+/*---------------------------------------------------------------------*/
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 17rem;
+  padding: 1rem;
+  max-width: 35rem;
+  background-color: var(--background-color-transparent);
+  gap: 2rem;
+}
+.contact img {
+  width: 100%;
+}
+
+#contact-data {
+  font-size: 1.5rem;
+}
